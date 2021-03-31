@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import {Image, Descriptions, Row, Col, Carousel} from 'antd'
-import HomeImage from './andy.jpg'
+import HomeImage from './images/andy.jpg'
 import './home.less'
 
 const { Item } = Descriptions;
