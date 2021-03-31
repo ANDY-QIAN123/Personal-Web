@@ -8,8 +8,9 @@ export default class Home extends Component{
   render(){
     return (
       <div className="home">
-        <Row>
-          <Col span={12}>
+        <div className="nobody"></div>
+        <Row class="nobodyRow">
+          <Col span={10}>
             <div className="homeImg">
               <Image
                 className="ImgeHome"
@@ -21,7 +22,7 @@ export default class Home extends Component{
               <span></span>
             </div>
           </Col>
-          <Col span={12}>
+          <Col span={14}>
             <div className="info">
               <Descriptions title="Contact Information" column={2} >
                 <Item label="Telephone">027 505 0575</Item>
