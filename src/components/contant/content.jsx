@@ -10,14 +10,16 @@ export default class Content extends Component{
   render(){
     return (
       <div className="content">
-        <Switch>
-          <Route path="/home" component={Home}/>
-          <Route path="/AboutMe" component={AboutPage}/>
-          <Route path="/SkillsMe" component={SkillsPage}/>
-          <Route path="/WorkingExperience" component={WorkPage}/>
-          <Route path="/Education" component={EducationPage}/>
-          <Redirect to="/home" component={Home}/>
-        </Switch>
+        <div className="backgroundContent">
+          <Switch>
+            <Route path="/home" component={Home}/>
+            <Route path="/AboutMe" component={AboutPage}/>
+            <Route path="/SkillsMe" component={SkillsPage}/>
+            <Route path="/WorkingExperience" component={WorkPage}/>
+            <Route path="/Education" component={EducationPage}/>
+            <Redirect to="/home" component={Home}/>
+          </Switch>
+        </div>
       </div>
     )
   }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Menu, Dropdown, Button } from 'antd';
+import { Menu, Dropdown} from 'antd';
 import {createFromIconfontCN} from '@ant-design/icons'
 import {NavLink} from 'react-router-dom'
-import { AppstoreOutlined ,BarsOutlined, LinkedinOutlined, BookOutlined, SolutionOutlined, LinkOutlined } from '@ant-design/icons';
+import { AppstoreOutlined ,BarsOutlined, LinkedinOutlined, BookOutlined, SolutionOutlined} from '@ant-design/icons';
 import './css/header.less'
 const { Item, SubMenu } = Menu;
 const IconFont = createFromIconfontCN({
@@ -30,22 +30,21 @@ export default class Header extends Component{
         <div className="logo"><NavLink className="list-group-item" to="/home"><IconFont className="candyicon" type="icon-Candy"></IconFont></NavLink></div>
         <div className="header-nav">
           <Menu mode="horizontal" theme="dark">
-            <Dropdown overlay={menu} placement="bottomCenter" arrow>
-              <Button className="btn" icon={<BarsOutlined />} style={{backgroundColor:"#041527", color:'#fff'}}>Andy Qian</Button>
-            </Dropdown>
-            <Item icon={<LinkOutlined />}>
-              <NavLink className="list-group-item" to="/AboutMe">About Me</NavLink>
+            <Item icon={<BarsOutlined />} title="first">
+              <Dropdown overlay={menu} placement="bottomCenter" arrow>
+                <NavLink className="list-group-item" to="/AboutMe">Andy Qian</NavLink>
+              </Dropdown>
             </Item>
-            <Item icon={<AppstoreOutlined />}>
+            <Item icon={<AppstoreOutlined />} title="a">
               <NavLink className="list-group-item" to="/SkillsMe">Skills</NavLink>
             </Item>
-            <Item icon={<SolutionOutlined />}>
+            <Item icon={<SolutionOutlined />} title="b">
             <NavLink className="list-group-item" to="/WorkingExperience">Working Experience</NavLink>
             </Item>
-            <Item icon={<BookOutlined />}>
+            <Item icon={<BookOutlined />} title="v">
             <NavLink className="list-group-item" to="/Education">Education Background</NavLink>
             </Item>
-            <Item icon={<LinkedinOutlined />}>
+            <Item icon={<LinkedinOutlined />} title="f">
               <a href="https://www.linkedin.cn/in/andy-yuan-qian/" target="_blank" rel="noopener noreferrer">
                 Andy Linkedin
               </a>
