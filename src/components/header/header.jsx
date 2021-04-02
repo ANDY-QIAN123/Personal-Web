@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Menu, Dropdown} from 'antd';
 import {createFromIconfontCN} from '@ant-design/icons'
 import {NavLink} from 'react-router-dom'
-import { AppstoreOutlined ,BarsOutlined, LinkedinOutlined, BookOutlined, SolutionOutlined} from '@ant-design/icons';
+import { AppstoreOutlined ,BarsOutlined, LinkedinOutlined} from '@ant-design/icons';
 import './css/header.less'
 const { Item, SubMenu } = Menu;
 const IconFont = createFromIconfontCN({
@@ -32,17 +32,11 @@ export default class Header extends Component{
           <Menu mode="horizontal" theme="dark">
             <Item icon={<BarsOutlined />} title="first">
               <Dropdown overlay={menu} placement="bottomCenter" arrow>
-                <NavLink className="list-group-item" to="/AboutMe">Andy Qian</NavLink>
+                <NavLink className="list-group-item" to="/Banner">Andy Qian</NavLink>
               </Dropdown>
             </Item>
             <Item icon={<AppstoreOutlined />} title="a">
-              <NavLink className="list-group-item" to="/SkillsMe">Skills</NavLink>
-            </Item>
-            <Item icon={<SolutionOutlined />} title="b">
-            <NavLink className="list-group-item" to="/WorkingExperience">Working Experience</NavLink>
-            </Item>
-            <Item icon={<BookOutlined />} title="v">
-            <NavLink className="list-group-item" to="/Education">Education Background</NavLink>
+            <NavLink className="list-group-item" to="/skills">Skills</NavLink>
             </Item>
             <Item icon={<LinkedinOutlined />} title="f">
               <a href="https://www.linkedin.cn/in/andy-yuan-qian/" target="_blank" rel="noopener noreferrer">
