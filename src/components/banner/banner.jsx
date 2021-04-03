@@ -7,22 +7,23 @@ import {ArrowLeftOutlined, ArrowRightOutlined} from '@ant-design/icons'
 import './banner.less'
 
 const Element = BannerAnim.Element;
-const textData = {
-  contentAbout:'Telephone: 027 505 0575'+
-  'Email: qianyuandream@gmail.com'+
-  'Address: Auckland, NewZealand'+
-  'LinkedIn: linkedin.cn/in/andy-yuan-qian'+
-  'Personal Blog: empty',
-  title: 'Contact Information',
-};
-let textArray = [
+
+let dataArray = [
   {
+    pic: 'https://zos.alipayobjects.com/rmsportal/ogXcvssYXpECqKG.png',
+    map: 'https://zos.alipayobjects.com/rmsportal/HfBaRfhTkeXFwHJ.png',
+    color: '#FFF43D',
+    background: '#F6B429',
     contentAbout:'Hobbies: Swimming, Blogging, Mountain climbing, Volunteering and community involvement.'+
     'Purpose: Never to old to learn. Keep learning new Teechnology'+
     'Experience with Wbe Developemnt: Comprehensive knowledge of foundational web dev skills including HTML5, CSS3, Less, jQuery, Bootstrap, Webpack, Node.js, React, and Angular.',
     title: 'About me',
   },
   {
+    pic: 'https://zos.alipayobjects.com/rmsportal/iCVhrDRFOAJnJgy.png',
+    map: 'https://zos.alipayobjects.com/rmsportal/XRfQxYENhzbfZXt.png',
+    color: '#FF4058',
+    background: '#FC1E4F',
     contentAbout:'Telephone: 027 505 0575'+
     'Email: qianyuandream@gmail.com'+
     'Address: Auckland, NewZealand'+
@@ -31,6 +32,10 @@ let textArray = [
     title: 'Contact Information',
   },
   {
+    pic: 'https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png',
+    map: 'https://zos.alipayobjects.com/rmsportal/syuaaBOvttVcNks.png',
+    color: '#9FDA7F',
+    background: '#64D487',
     contentAbout:'Web Developer (work remotely)，Meihaofangwuzhizao Ltd (China)'+
     '04/2017 - 11/2018'+
     'Front end testing tool: Cypress'+
@@ -47,6 +52,10 @@ let textArray = [
     title: 'Working Experience',
   },
   {
+    pic: 'https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png',
+    map: 'https://zos.alipayobjects.com/rmsportal/syuaaBOvttVcNks.png',
+    color: '#91d5ff',
+    background: '#096dd9',
     contentAbout:'Auckland University of Technology'+
     'Bachelor of Computer and Information Science'+
     '02/2019-11/2020'+
@@ -57,35 +66,9 @@ let textArray = [
     'Diploma of Information Systems (Level 5)'+
     '11/2016-06/2017',
     title: 'Education Background',
-  }
-]
-let dataArray = [
-  {
-    pic: 'https://zos.alipayobjects.com/rmsportal/ogXcvssYXpECqKG.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/HfBaRfhTkeXFwHJ.png',
-    color: '#FFF43D',
-    background: '#F6B429',
-  },
-  {
-    pic: 'https://zos.alipayobjects.com/rmsportal/iCVhrDRFOAJnJgy.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/XRfQxYENhzbfZXt.png',
-    color: '#FF4058',
-    background: '#FC1E4F',
-  },
-  {
-    pic: 'https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/syuaaBOvttVcNks.png',
-    color: '#9FDA7F',
-    background: '#64D487',
-  },
-  {
-    pic: 'https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/syuaaBOvttVcNks.png',
-    color: '#91d5ff',
-    background: '#096dd9',
   },
 ];
-dataArray = dataArray.map(item => ({ ...item, ...textData }));
+dataArray = dataArray.map(item => ({ ...item }));
 
 export default class Banner extends Component{
   static propTypes = {
