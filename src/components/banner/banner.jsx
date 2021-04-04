@@ -5,20 +5,12 @@ import {TweenOneGroup} from 'rc-tween-one'
 import PropTypes from 'prop-types';
 import {ArrowLeftOutlined, ArrowRightOutlined} from '@ant-design/icons'
 import './banner.less'
-import AboutMe from './imges/AboutMe.png'
-import anlogo from './imges/amlogo.png'
-import ContactInf from './imges/ContactInformation.png'
-import Cilogo from './imges/cilogo.png'
-import EducationB from './imges/EducationBakground.png'
-import Eblogo from './imges/eblogo.png'
-import WorkEx from './imges/WorkingExperience.png'
-import Welogo from './imges/welogo.png'
 const Element = BannerAnim.Element;
 
 let dataArray = [
   {
-    pic: AboutMe,
-    map: anlogo,
+    pic: 'https://z3.ax1x.com/2021/04/05/cMnRzQ.png',
+    map: 'https://z3.ax1x.com/2021/04/05/cMnfMj.png',
     color: '#FFF43D',
     background: '#F6B429',
     contentAboutOne:'Name: Yuan(Andy) Qian.',
@@ -29,8 +21,8 @@ let dataArray = [
     title: 'About me',
   },
   {
-    pic: ContactInf,
-    map: Cilogo,
+    pic: 'https://z3.ax1x.com/2021/04/05/cMn4Ln.png',
+    map: 'https://z3.ax1x.com/2021/04/05/cMn2Rg.png',
     color: '#FF4058',
     background: '#FC1E4F',
     contentAboutOne:'Telephone: 027-505-0575',
@@ -41,8 +33,8 @@ let dataArray = [
     title: 'Contact Information',
   },
   {
-    pic: WorkEx,
-    map: Welogo,
+    pic: 'https://z3.ax1x.com/2021/04/05/cMnToV.png',
+    map: 'https://z3.ax1x.com/2021/04/05/cMnod0.png',
     color: '#9FDA7F',
     background: '#64D487',
     contentAboutOne:'Web Developer (work remotely)，Meihaofangwuzhizao Ltd (China).',
@@ -61,8 +53,8 @@ let dataArray = [
     title: 'Working Experience',
   },
   {
-    pic: EducationB,
-    map: Eblogo,
+    pic: 'https://z3.ax1x.com/2021/04/05/cMnIZq.png',
+    map: 'https://z3.ax1x.com/2021/04/05/cMnhss.png',
     color: '#a3daff',
     background: '#0080ff',
     contentAboutOne:'Auckland University of Technology.',

@@ -3,7 +3,6 @@ import { Menu, Dropdown} from 'antd';
 import {NavLink} from 'react-router-dom'
 import { AppstoreOutlined ,BarsOutlined, LinkedinOutlined, GithubOutlined} from '@ant-design/icons';
 import './css/header.less'
-import Logo from './imges/logo.png'
 const { Item, SubMenu } = Menu;
 
 const menu = (
@@ -25,7 +24,7 @@ export default class Header extends Component{
     return(
       <div>
       <header>
-        <div className="logo"><NavLink className="list-group-item" to="/home"><img src={Logo} alt="logo"/></NavLink></div>
+        <div className="logo"><NavLink className="list-group-item" to="/home"><img src="https://z3.ax1x.com/2021/04/05/cMnci8.png" alt="logo"/></NavLink></div>
         <div className="header-nav">
           <Menu mode="horizontal">
             <Item icon={<BarsOutlined />} title="first">
