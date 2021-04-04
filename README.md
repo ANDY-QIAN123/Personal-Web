@@ -22,21 +22,25 @@ To download the repository and install dependencies, run the following commands:
 # Running
 
 Run the following command to build the react application and serve it with fast refresh:
-</hr>
-`npm start`
-or
-`yarn start`
-</hr>
+<ul>
+  <li>npm start</li>
+  or
+  <li>yarn start</li>
+  <li>nvm install</li>
+  <li>npm install  or  yarn install</li>
+</ul>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
+</hr>
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## Deploying
 <h4>Deploying to Github Pages</h4>
-1. Modify the environmental variables and git remote url in .github/workflows/github-pages.yml.</hr>
-2. Modify homepage in package.json to point to where you plan to host your site. If you do not plan on using a custom domain name, it should look like https://[your-gh-username].github.io/[repository-name - default:personal-site]/</hr>
-3. If you plan on using a custom domain, modify public/CNAME. If you don't, delete public/CNAME.</hr>
+<ol>
+<li>Modify the environmental variables and git remote url in .github/workflows/github-pages.yml.</li>
+<li>Modify homepage in package.json to point to where you plan to host your site. If you do not plan on using a custom domain name, it should look like https://[your-gh-username].github.io/[repository-name - default:personal-site]/</li>
+<li>If you plan on using a custom domain, modify public/CNAME. If you don't, delete public/CNAME.</li>
+</ol>
 Make a commit to main and push your changes. That's it.
 
 <h4>Static Export</h4>
@@ -44,11 +48,17 @@ To statically export the site without deploying to github pages, delete or disab
 
 ## Developer Tools
 <h3>app-create-react</h3>
-Create React App works on macOS, Windows, and Linux.</hr>
-`npx create-react-app my-app`</hr>
-`cd my-app`</hr>
-`npm start`
+Create React App works on macOS, Windows, and Linux.
+<ul>
+  <li>npx create-react-app my-app</li>
+  <li>cd my-app</li>
+  <li>npm start</li>
+</ul>
 
 <h3>Ant Design</h3>
 An enterprise-class UI design language and React UI library.
-`yarn add antd` or `npm install antd`
+<ul>
+  <li>arn add antd</li>
+  or
+  <li>npm install antd</li>
+</ul>
