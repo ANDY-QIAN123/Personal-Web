@@ -1,31 +1,85 @@
 import React, { Component } from 'react';
 import QueueAnim from 'rc-queue-anim';
 import PropTypes from 'prop-types';
-import {CloseOutlined} from '@ant-design/icons'
+import {FullscreenExitOutlined} from '@ant-design/icons'
 import TweenOne, { TweenOneGroup } from 'rc-tween-one';
 import './skills.less'
+import Angular from './imges/a.jpg'
+import Vue from './imges/vue.jpg'
+import ReactImage from './imges/react.jpg'
+import Css from './imges/css.jpg'
+import Html from './imges/html.jpg'
+import Js from './imges/js.jpg'
+import Ant from './imges/ant.jpg'
+import Boot from './imges/bootstrap.jpg'
+import Git from './imges/github.jpg'
+import Jquery from './imges/jquery.jpg'
+import Node from './imges/nodejs.jpg'
+import Webpack from './imges/webpack.jpg'
 
-const textData = {
-  content: 'Taiwan called motorcycle, motor bike [1] or a motorcycle,' +
-  ' the motorcycle referred to in the mainland, Hong Kong and Southeast' +
-  ' Asia known as motorcycles.',
-  title: 'Motorcycle',
-};
 let dataArray = [
-  { image: 'https://zos.alipayobjects.com/rmsportal/DGOtoWASeguMJgV.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/BXJNKCeUSkhQoSS.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/TDIbcrKdLWVeWJM.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/SDLiKqyfBvnKMrA.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/UcVbOrSDHCLPqLG.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/QJmGZYJBRLkxFSy.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/PDiTkHViQNVHddN.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/beHtidyjUMOXbkI.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/vJcpMCTaSKSVWyH.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/dvQuFtUoRmvWLsZ.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/QqWQKvgLSJaYbpr.png' },
-  { image: 'https://zos.alipayobjects.com/rmsportal/pTfNdthdsUpLPLJ.png' },
+  { image: Html,
+    content: 'HTML5 introduced few structural elements to define different parts of a web page like article, header, footer, main, mark and many more. ',
+    content_knowlege:' In-depth knowledge of HTML5',
+    title: 'HTML 5',
+  },
+  { image: Css,
+    content: 'Cascading Style Sheet (CSS) is a popular styling language which is used with HTML to design websites. If HTML5 is a human body, then css like a clothes.',
+    content_knowlege:' Strong knowledge of css3',
+    title: 'CSS 3',
+   },
+  { image: Js,
+    content: 'JavaScript is a lightweight, interpreted programming language, which is different with Java. Understand inheritance and the prototype chain, strict mode… ',
+    content_knowlege:'Experience developing JS (ES 6/7/8)',
+    title: 'JavaScript',
+  },
+  { image: Boot,
+    content: 'A popular CSS Framework for developing responsive and mobile-first websites. I usually use "Grid" on my project',
+    content_knowlege:'Experience with Bootstrap API',
+    title: 'Bootstrap',
+  },
+  { image: Jquery,
+    content: 'It is a fast, small, and feature-rich JavaScript library, but it is not popular now. I was learning the document for JQuery, less use for now',
+    content_knowlege:'Easy to use API which across a multitude of browsers.',
+    title: 'jQuery',
+  },
+  { image: Git, 
+    content: 'GitHub is a Git repository hosting service. GitHub is great learning environment. I like reading code and sharing my code on the GitHub.',
+    content_knowlege:'Experience with git and understand how to use the Github',
+    title: 'GitHub',
+  },
+  { image: Node,
+    content: 'Node.js is an open-source, cross-platform JavaScript runtime environment and library to run web applications outside the client’s browser.',
+    content_knowlege:' Strong knowledge of node.js',
+    title: 'Node.js',
+  },
+  { image: Webpack,
+    content: 'Webpack is a build tool that puts all of your assets, including Javascript, images, fonts, and CSS, in a dependency graph.',
+    content_knowlege:'Good understanding with Webpack',
+    title: 'Webpack',
+  },
+  { image: Ant,
+    content: 'It is a React UI library, It has more and more easy-to-use components that are useful for building elegant user interfaces.',
+    content_knowlege:' Strong knowledge of Ant Design',
+    title: 'Ant Design',
+  },
+  { image: ReactImage,
+    content: 'React is a front-end JavaScript library developed by Facebook in 2011. React is one of popular JavaScript frontend framework. ',
+    content_knowlege:' Strong knowledge of React, Redux, Lifecycle, Route-dom',
+    title: 'React',
+  },
+  { image: Vue,
+    content: 'Vue is a progressive framework used to building user interfaces.The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries.',
+    content_knowlege:'good knowledge of Vue',
+    title: 'Vue',
+  },
+  { image: Angular,    
+    content: 'Angular is a TypeScript-based open-source web application framework. It offers an easy and powerful way of building front-end applications.',
+    content_knowlege:'knowledge of Angular, TypeScript, Angular CLI, Lifecycle',
+    title: 'Angular 11',
+  },
 ];
-dataArray = dataArray.map(item => ({ ...item, ...textData }));
+dataArray = dataArray.map(item => ({ ...item}));
 export default class skillPage extends Component {
   static propTypes = {
     className: PropTypes.string,
@@ -82,7 +136,7 @@ export default class skillPage extends Component {
     const imgBoxWidth = 130;
     const imgBoxHeight = 96;
     return dataArray.map((item, i) => {
-      const { image, title, content } = item;
+      const { image, title, content, content_knowlege } = item;
       const isEnter = typeof this.state.picOpen[i] === 'boolean';
       const isOpen = this.state.picOpen[i];
 
@@ -161,9 +215,10 @@ export default class skillPage extends Component {
                 }}
               >
                 <h1>{title}</h1>
-                <CloseOutlined onClick={e => this.onClose(e, i)} />
+                <FullscreenExitOutlined onClick={e => this.onClose(e, i)} className="cannel_log"/>
                 <em />
                 <p>{content}</p>
+                <p>{content_knowlege}</p>
               </div>
             )}
           </TweenOneGroup>
@@ -174,12 +229,12 @@ export default class skillPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="skillBox">
         <div className={`${this.props.className}-wrapper`}>
           <div className={this.props.className}>
             <QueueAnim type="bottom" className={`${this.props.className}-title`}>
-              <h1 key="h1">Motion Design</h1>
-              <p key="p">The react animation solution</p>
+              <h1 key="h1">Skills</h1>
+              <p key="p">Web Development Tools</p>
             </QueueAnim>
             <QueueAnim
               delay={this.getDelay}

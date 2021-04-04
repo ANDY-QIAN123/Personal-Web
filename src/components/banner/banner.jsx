@@ -5,67 +5,76 @@ import {TweenOneGroup} from 'rc-tween-one'
 import PropTypes from 'prop-types';
 import {ArrowLeftOutlined, ArrowRightOutlined} from '@ant-design/icons'
 import './banner.less'
-
+import AboutMe from './imges/AboutMe.png'
+import anlogo from './imges/amlogo.png'
+import ContactInf from './imges/ContactInformation.png'
+import Cilogo from './imges/cilogo.png'
+import EducationB from './imges/EducationBakground.png'
+import Eblogo from './imges/eblogo.png'
+import WorkEx from './imges/WorkingExperience.png'
+import Welogo from './imges/welogo.png'
 const Element = BannerAnim.Element;
 
 let dataArray = [
   {
-    pic: 'https://zos.alipayobjects.com/rmsportal/ogXcvssYXpECqKG.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/HfBaRfhTkeXFwHJ.png',
+    pic: AboutMe,
+    map: anlogo,
     color: '#FFF43D',
     background: '#F6B429',
-    contentAbout:'Hobbies: Swimming, Blogging, Mountain climbing, Volunteering and community involvement.'+
-    'Purpose: Never to old to learn. Keep learning new Teechnology'+
-    'Experience with Wbe Developemnt: Comprehensive knowledge of foundational web dev skills including HTML5, CSS3, Less, jQuery, Bootstrap, Webpack, Node.js, React, and Angular.',
+    contentAboutOne:'Name: Yuan(Andy) Qian.',
+    contentAboutTwo:'Purpose: Never too old to learn. Keep learning new Technology.',
+    contentAboutThree:'Languages: Chinese(Mandarin), English.',
+    contentAboutFour:' Experience with Web Development: Comprehensive knowledge of foundational web dev skills including HTML5, CSS3, Less, jQuery, Bootstrap, Webpack, Node.js, React, and Angular.',
+    contentAboutFive:'Hobbies: Swimming, Blogging, Mountain Climbing, Volunteering and Community Involvement.',
     title: 'About me',
   },
   {
-    pic: 'https://zos.alipayobjects.com/rmsportal/iCVhrDRFOAJnJgy.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/XRfQxYENhzbfZXt.png',
+    pic: ContactInf,
+    map: Cilogo,
     color: '#FF4058',
     background: '#FC1E4F',
-    contentAbout:'Telephone: 027 505 0575'+
-    'Email: qianyuandream@gmail.com'+
-    'Address: Auckland, NewZealand'+
-    'LinkedIn: linkedin.cn/in/andy-yuan-qian'+
-    'Personal Blog: empty',
+    contentAboutOne:'Telephone: 027-505-0575',
+    contentAboutTwo:'Email: qianyuandream@gmail.com.',
+    contentAboutThree:'Address: Auckland, NewZealand.',
+    contentAboutFour:'LinkedIn: linkedin.cn/in/andy-yuan-qian.',
+    contentAboutFive:'Personal GitHub: https://github.com/Andy-94.',
     title: 'Contact Information',
   },
   {
-    pic: 'https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/syuaaBOvttVcNks.png',
+    pic: WorkEx,
+    map: Welogo,
     color: '#9FDA7F',
     background: '#64D487',
-    contentAbout:'Web Developer (work remotely)，Meihaofangwuzhizao Ltd (China)'+
-    '04/2017 - 11/2018'+
-    'Front end testing tool: Cypress'+
-    'Development Tools: HTML5, CSS3, JavaScript, jQuery, Less, Bootstrap, Git'+
-    'Quickly learned new skills and applied them to daily tasks, improving efficiency and productivity.'+
-    'Project Leader of R&D Project，Compucom New Zealand (Auckland)'+
-    '07/2019 - 07/2020'+
-    'Collaboration tool: Trello, Microsoft Teams'+
-    'Development Tools: Python, Caffe, TensorFlow'+
-    'Web Developer Intern, Bow Length Limited (Auckland)'+
-    '11/2020 – 3/2021'+
-    'Developed team communications and information for online meetings'+
-    'Developed analytical dashboards from scratch using HTML5, CSS3, and JavaScript',
+    contentAboutOne:'Web Developer (work remotely)，Meihaofangwuzhizao Ltd (China).',
+    contentAboutTwo:'(04/2017 - 11/2018)',
+    contentAboutThree:'- Front End Testing Tool: Cypress.',
+    contentAboutFour:'- Development Tools: HTML5, CSS3, JavaScript, jQuery, Less, Bootstrap, Git.',
+    contentAboutFive:'- Quickly learned new skills and applied them to daily tasks, improving efficiency and productivity.',
+    contentAboutSix:'Project Leader of R&D Project，Compucom New Zealand (Auckland).',
+    contentAboutSeven:'(07/2019 - 07/2020)',
+    contentAboutEignt:'- Collaboration Tool: Trello, Microsoft Teams.',
+    contentAboutNine:'- Development Tools: Python, Caffe, TensorFlow.',
+    contentAboutTen:'Web Developer Intern, Bow Length Limited (Auckland).',
+    contentAboutOneOne:'(11/2020 – 3/2021)',
+    contentAboutOneTwo:'- Developed team communications and information for online meetings.',
+    contentAboutOneThree:'- Developed analytical dashboards from scratch using HTML5, CSS3, and JavaScript.',
     title: 'Working Experience',
   },
   {
-    pic: 'https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png',
-    map: 'https://zos.alipayobjects.com/rmsportal/syuaaBOvttVcNks.png',
-    color: '#91d5ff',
-    background: '#096dd9',
-    contentAbout:'Auckland University of Technology'+
-    'Bachelor of Computer and Information Science'+
-    '02/2019-11/2020'+
-    'ICL Graduate Business School'+
-    'Diploma in Computer Science (Level 7)'+
-    '08/2017-08/2018'+
-    'ICL Graduate Business School'+
-    'Diploma of Information Systems (Level 5)'+
-    '11/2016-06/2017',
-    title: 'Education Background',
+    pic: EducationB,
+    map: Eblogo,
+    color: '#a3daff',
+    background: '#0080ff',
+    contentAboutOne:'Auckland University of Technology.',
+    contentAboutTwo:'- Bachelor of Computer and Information Science.',
+    contentAboutThree:'(02/2019-11/2020)',
+    contentAboutFour:'ICL Graduate Business School.',
+    contentAboutFive:'- Diploma in Computer Science (Level 7).',
+    contentAboutSix:'(08/2017-08/2018)',
+    contentAboutSeven:'ICL Graduate Business School.',
+    contentAboutEignt:'- Diploma of Information Systems (Level 5).',
+    contentAboutNine:'(11/2016-06/2017)',
+    title: 'Education Background.',
   },
 ];
 dataArray = dataArray.map(item => ({ ...item }));
@@ -161,13 +170,27 @@ export default class Banner extends Component{
         </QueueAnim>
       </Element>));
     const textChildren = dataArray.map((item, i) => {
-      const { title, contentAbout, background } = item;
+      const { title, background } = item;
       return (
       <Element key={i}>
         <QueueAnim type="bottom" duration={1000} delay={[!i ? this.state.delay + 500 : 800, 0]}>
           <h1 key="h1">{title}</h1>
           <em key="em" style={{ background }} />
-          <p key="p">{contentAbout}</p>
+          <div key="p" className="textstyle" >
+            <p>{item.contentAboutOne}</p>
+            <p>{item.contentAboutTwo}</p>
+            <p>{item.contentAboutThree}</p>
+            <p>{item.contentAboutFour}</p>
+            <p>{item.contentAboutFive}</p>
+            <p>{item.contentAboutSix}</p>
+            <p>{item.contentAboutSeven}</p>
+            <p>{item.contentAboutEignt}</p>
+            <p>{item.contentAboutNine}</p>
+            <p>{item.contentAboutTen}</p>
+            <p>{item.contentAboutOneOne}</p>
+            <p>{item.contentAboutOneTwo}</p>
+            <p>{item.contentAboutOneThree}</p>
+          </div>
         </QueueAnim>
       </Element>);
     });

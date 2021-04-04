@@ -12,7 +12,7 @@ export default class App extends Component{
         <Header/>
         <Content /> 
         <Footer className="footer">
-          Yuan Qian ©2021 Created by Andy
+          Personal Resume©2021 Created by Yuan(Andy) Qian
         </Footer>
       </Layout>
     )
