@@ -1,5 +1,5 @@
 # Personal Website
-My Website Link: https://andy-qian123.github.io/Personal-Web/build/index.html .
+My Website Link: <a href=https://andy-qian123.github.io/Personal-Web/build/index.html>Please click</a> .
 </hr>
 This is my personal website. built using modern JavaScript, base on create-react-app with React-Router, Less, Ant Design, GitHub actions, and many other userful technologies.
 
