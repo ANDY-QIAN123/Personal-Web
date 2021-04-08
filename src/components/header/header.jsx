@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Menu, Dropdown} from 'antd';
 import {NavLink} from 'react-router-dom'
-import { AppstoreOutlined ,BarsOutlined, LinkedinOutlined, GithubOutlined} from '@ant-design/icons';
+import { AppstoreOutlined ,BarsOutlined, LinkedinOutlined, GithubOutlined, DeploymentUnitOutlined} from '@ant-design/icons';
 import './css/header.less'
 const { Item, SubMenu } = Menu;
 
@@ -44,6 +44,11 @@ export default class Header extends Component{
               <a href="https://github.com/Andy-94" target="_blank" rel="noopener noreferrer">
                 Personal GitHub
               </a>
+            </Item>
+            <Item icon={<DeploymentUnitOutlined />} disabled title="e">
+  
+                Personal Works
+              
             </Item>
           </Menu>
         </div>
