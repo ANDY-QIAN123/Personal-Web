@@ -11,7 +11,7 @@ const menu = (
       <Item key="b">Auckland, NewZealand</Item>
     </SubMenu>
     <SubMenu key="c" title="Email">
-      <Item key="d">qianyuandream@gmail.com</Item>
+      <Item key="d">andycodebuilder@gmail.com</Item>
     </SubMenu>
     <SubMenu key="e" title="Phone Number">
       <Item disabled key="f">027-505-0475</Item>

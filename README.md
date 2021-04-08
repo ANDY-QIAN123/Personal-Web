@@ -5,7 +5,7 @@ sorry about the "Personal work" on the header page. I will create it now. thanks
 This is my personal website. built using modern JavaScript, base on create-react-app with React-Router, Less, Ant Design, GitHub actions, and many other userful technologies.
 
 # Adapting this Project
-If you want to build your own personal website from this project, it will very faster. Please feel free to reach out to me by filing an issue or emailing me at qianyuandream@gmail.com for help configuring your project.
+If you want to build your own personal website from this project, it will very faster. Please feel free to reach out to me by filing an issue or emailing me at andycodebuilder@gmail.com for help configuring your project.
 
 # Dependencies
 My development environment is MacOS. using Visual Studio.

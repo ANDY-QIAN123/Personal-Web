@@ -26,7 +26,7 @@ let dataArray = [
     color: '#FF4058',
     background: '#FC1E4F',
     contentAboutOne:'Telephone: 027-505-0575',
-    contentAboutTwo:'Email: qianyuandream@gmail.com.',
+    contentAboutTwo:'Email: andycodebuilder@gmail.com',
     contentAboutThree:'Address: Auckland, NewZealand.',
     contentAboutFour:'LinkedIn: linkedin.cn/in/andy-yuan-qian.',
     contentAboutFive:'Personal GitHub: https://github.com/Andy-94.',
